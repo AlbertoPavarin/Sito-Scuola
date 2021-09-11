@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang = "it">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <title>IIS Viola Marchesini Rovigo - Home</title>
+    </head>
+    <script>
+            let giorni = ['Lunedì', 'Martedì', 'Mercoledì', ' Giovedì', 'Venerdì', ' Sabato', ' Domenica'];
+            let mesi = ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno', 'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre']
+            const data = new Date();
+            const giorno = giorni[data.getDay() - 1];
+            let giornoN = data.getDate();
+            if (giornoN < 10)
+            {
+                giornoN = '0' + giornoN;
+            }
+            const mese = mesi[data.getMonth()];
+            const anno = data.getFullYear();
+            document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('#date').innerHTML = giorno + ', ' + giornoN.toString() + ' ' + mese + ' ' + anno.toString();
+        });
+    </script>
+    <body id="page">
+        <div id="header">
+            <div id="date">
+            </div>
+            <div id="header-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <div id="repimg">
+                                <a href=""><img src="img/logo-repubblica-italiana.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div id="header-text">
+                                <p id="iis">ISTITUTO DI ISTRUZIONE SUPERIORE</p>
+                                <p id="viola">I.I.S. VIOLA MARCHESINI</p>
+                                <span class="indirizzi">Via De Gasperi, 21 - 45100 - Rovigo - Tel. 0425/410699 - Fax 0425/35277</span>
+                                <br>
+                                <span class="indirizzi">PEC: <a href="">ROIS012001@pec.istruzione.it</a> - Codice Meccanografico: ROIS012001</span>
+                                
+                                <p class="indirizzi">Codice Fiscale 80006050290</p>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="certiquality">
+                                <a href=""><img id="certimg" src="img/certiquality.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menubar">
+            <div id="menu">
+                <nav id="toolbar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-1 col-md-auto col-xs-12 divsel"><p class="selection">Home</p></div>
+                            <div class="col-xl-1 col-md-auto col-xs-12 divsel"><p class="selection">La scuola</p></div>
+                            <div class="col-xl-1 col-md-auto col-xs-12 divsel"><p class="selection">Genitori</p></div>
+                            <div class="col-xl-1 col-md-auto col-xs-12 divsel"><p class="selection">Studenti</p></div>
+                            <div class="col-xl-1 col-md-auto col-xs-12 divsel"><p class="selection">Docenti</p></div>
+                            <div class="col-xl-1 col-md-auto col-xs-12 divsel"><p class="selection">Personale ATA</p></div>
+                            <div class="col-xl-2 col-md-auto col-xs-12 divsel"><p class="selection">Orientamento 2020-2021</p></div>
+                            <div class="col-xl-1 col-md-auto col-xs-12 divsel"><p class="selection">ECDL</p></div>
+                            <div class="col-xl-1 col-md-auto col-xs-12 divsel"><p class="selection">Cisco</p></div>
+                            <div class="col-xl-2 col-md-auto col-xs-12"><input id="searchForm" placeholder="Cerca..." type="text"></div>
+                        </div>
+                    </div>   
+                </nav>           
+            </div>
+        </div>
+        <div id="main">
+             <div class="container">
+                 <div class="row">
+                    <div class="col-xl-3">
+                        <div class="boxes">
+                            <h3 class="box-title">
+                                Plessi
+                            </h3>
+                            <a class="box-links-p" href=""><p class="box-info-p">I.I.S. "Viola-Marchesini" </p></a>
+                            <a class="box-links-p" href="http://www.agrariorovigo.it/" target="_blank"><p class="box-info-p">ITA"O. Munerati" </p></a>
+                            <a class="box-links-p" href="http://www.itsgberninirovigo.it/" target="_blank"><p class="box-info-p">ITG"A. Bernini"</p></a>
+                        </div>
+                        <div class="boxes">
+                            <h3 class="box-title">
+                                Indirizzi di studio Settore Tecnico Tecnologico
+                            </h3>
+                            <ul>
+                                <li><a class="box-links" href=""><p class="box-info">Biennio Comune</p></a></li>
+                                <li><a class="box-links" href=""><p class="box-info">Chimica, Materiali, e Biotecnologie</p></a></li>
+                                <li><a class="box-links" href=""><p class="box-info">Elettronica ed Elettrotecnica</p></a></li>
+                                <li><a class="box-links" href=""><p class="box-info">Informatica e Telecomunicazioni</p></a></li>
+                                <li><a class="box-links" href=""><p class="box-info">Meccanica, Meccatronica ed Energia</p></a></li>
+                                <li><a class="box-links" href=""><p class="box-info">Sistema Moda</p></a></li>
+                                <li><a class="box-links" href=""><p class="box-info">Istruzione degli Adulti</p></a></li>
+                                <li><a class="box-links" href=""><p class="box-info">Agraria, Agroalimentare e Agroindustria (sede Munerati)</p></a></li>
+                                <li><a class="box-links" href=""><p class="box-info">Costruzioni, Ambiente e Territorio (sede Bernini)</p></a></li>
+                            </ul>
+                        </div>
+                        <div class="boxes">
+                            <h3 class="box-title">
+                                Indirizzi di studio Settore Professionale
+                            </h3>
+                            <ul>
+                                <li><a class="box-links" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><p class="box-info">Apparati, impianti e servizi tecnici industriali e civili</p></a></li>
+                                <li><a class="box-links" href=""><p class="box-info">Manutenzione mezzi di trasporto</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="boxes">
+                            <h3 class="box-title">
+                                Risorse per Didattica Digitale Integrata
+                            </h3>
+                            <p class="box-ddi">Risorse utili per la Didattica Digitale Integrata</p>
+                        </div>
+                        <h5 id="home-text">Home</h5>
+                        <h3 class="main-text">In evidenza</h3>
+                        <h4 class="sottotitoli">Orario dal 13 settembre 2021 plesso ITI "F. Viola"</h4>
+                        <p class="main-ps">
+                            Si comunica che il <b>13 settembre le lezioni inizieranno alle ore 8.00 e termineranno alle ore 12.00 per le Classi Seconde, Terze, Quarte, Quinte dell'ITI.</b><br>
+                            Tale orario resterà in vigore per tutta la prima settimana di scuola.<br>
+                            La pausa didattica si svolgerà dalle 9.50 alle 10.10. Già dal 13 settembre sarà disponibile la vendita di alimenti per la merenda.
+                        <p>
+                        <p class="main-ps">   
+                            <b>Gli studenti delle classi prime dell'ITI il 13 settembre entreranno alle ore 9,00</b>, dovranno accedere ai luoghi di ritrovo, come indicato nella comunicazione allegata, solo 5 minuti prima dell'orario indicato, muniti di mascherina e rispettando le distanze di sicurezza.<br>
+                            Gli studenti-tutor autorizzati accompagneranno le Classi nelle rispettive Aule.<br>
+                            <b>Per la settimana dal 14 al 18 settembre le lezioni inizieranno alle ore 8 e termineranno alle ore 12.00.</b>
+                            <br><a href="" class="main-link">Visualizza la comunicazione per le classi prime</a>
+                            <br><a href="" class="main-link">Visualizza la comunicazione per le classi seconde, terze, quarte e quinte</a>
+                        </p>
+                        <h4 class="sottotitoli">
+                            Elenco alunni classi prime e terze AS 2021-2022
+                        </h4>
+                        <p class="main-ps">
+                            Si pubblicano gli elenchi delle studentesse e degli studenti delle classi prime e terze di tutti i plessi per l'A.S. 2021-2022
+                            <br><a href="" class="main-link">Elenchi classi prime</a>
+                            <br><a href="" class="main-link">Elenchi classi terze</a>
+                        </p>
+                        <h4 class="sottotitoli">
+                            Corso serale Istruzione degli Adulti A.S. 2021-2022
+                        </h4>
+                        <p class="main-ps">
+                            Si comunica che presso il nostro Istituto è <b>possibile iscriversi ai corsi per adulti IdA di secondo livello</b> finalizzati al conseguimento del diploma di istruzione tecnica per l’A.S. 2021/2022, inoltrando la domanda di iscrizione on-line.
+                            <br>Ci si può iscrivere al:
+                            <ul>
+                                <li class="main-li"><b>primo periodo didattico:</b> primo e secondo anno (Biennio comune)</li>
+                                <li class="main-li"><b>secondo periodo didattico:</b> terzo e quarto anno (Meccanica, Informatica e Sistema Moda)</li>
+                                <li class="main-li"><b>terzo periodo didattico:</b> quinto anno (Meccanica, Informatica e Sistema Moda)</li>
+                            </ul>
+                        </p>
+                        <p class="main-ps">
+                            <a href="" class="main-link">Per maggiori informazioni scarica l'allegato</a>
+                            <br><a href="" class="main-link">Modulo di iscrizione online</a>
+                            <br><a href="" class="main-link">Scarica la locandina 1</a>
+                            <br><a href="" class="main-link">Scarica la locandina 2</a>                          
+                        </p>
+                        <h4 class="sottotitoli">
+                            Prove di recupero per gli studenti con sospensione del giudizio
+                        </h4>
+                        <p class="main-ps">
+                            Si comunicano le giornate in cui si svolgeranno le <b>Prove di recupero per gli studenti con sospensione del giudizio:</b>
+                            <ul>
+                                <li class="main-li"><b>25 agosto:</b> Prove di Matematica, Fisica, Scienze della Terra e Biologia, Tecnologie Informatiche (classi 1^ IT), Chimica Biennio, TTRG (Biennio);</li>
+                                <li class="main-li"><b>26 agosto:</b> Prove di Inglese, Diritto, Geografia, Genio rurale, Produzioni Vegetali, Biotecnologie agrarie, Trasformazione dei Prodotti, Economia Estimo Marketing e Legislazione, Tecnologie Elettrico Elettroniche (IPIA);</li>
+                                <li class="main-li"><b>27 agosto:</b> Prove di Italiano, Storia, Chimica Organica, Chimica Analitica, Tecnologie Chimiche Industriali, Topografia, Progettazione Costruzione Impianti, Tecnologie Progettazioni Sistemi Informatici, Telecomunicazioni, Elettrotecnica ed Elettronica, Meccanica Macchine ed energia, Sistemi e Automazione, Tecnologie Meccaniche, Disegno Progettazione Organizzazione industriale, Tecnologie e Progettazioni di sistemi elettrici ed elettronici.</li>
+                            </ul>
+                        </p>
+                        <p class="main-ps">
+                            Gli orari specifici delle Prove verranno comunicati i primi di luglio.
+                            <br>Si informa altresì che il <b>23 e 24 agosto 2021</b>verrà effettuata una ripresa dei Corsi di recupero, in vista delle prove.
+                        </p>
+                    </div>
+                    <div class="col-xl-3">   
+                        <div class="boxes-img">
+                            <h3 class="box-title" style="text-align: left;">PON 2014-2020</h3>
+                            <a href=""><img class="main-img" src="img/pon.png" width="200px"></a>
+                        </div>
+                        <div class="boxes-img">
+                            <h3 class="box-title">
+                                    SICUREZZA E COVID
+                            </h3>
+                            <a href=""><img src="img/facial_mask.png" class="main-img" width="120px"></a>
+                        </div>
+                        <div class="boxes-img">
+                            <h3 class="box-title" style="text-align: left;">Tour Virtuale</h3>
+                            <a href=""><img class="main-img" src="img/google_street.png" width="130px"></a>
+                            <p class="main-ps">Fai un tour virtuale dell'IIS "Viola-Marchesini"</p>
+                        </div>
+                        <div class="boxes-img">
+                            <h3 class="box-title">La Scuola Online</h3>
+                            <a href=""><img class="main-img" src="img/classeviva.jpg" width="200px"></a>
+                            <a href=""><img class="main-img" src="img/albo_online.png" width="200"></a>
+                            <a href=""><img class="main-img" src="img/trasparenza.png" width="200"></a>
+                            <a href=""><img class="main-img" src="img/comunicati.png" width="200"></a>
+                            <a href=""><img class="main-img" src="img/set.png" width="200"></a>
+                            <p class="main-ps"><a href="" class="main-link">Candida la tua azienda per ASL
+                            <br> azienda attività ASL</a></p>
+                        </div>
+                        <div class="boxes-img">
+                            <a href=""><img class="main-img" src="img/edcivica.jpg" width="200"></a>
+                        </div>
+                        <div class="boxes-img">
+                            <a href=""><img class="main-img" src="img/moodle_2.png" width="180"></a>
+                        </div>
+                        <div class="boxes-img">
+                            <a href=""><img class="main-img" src="img/bionet.png" width="180"></a>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+             <div id="footer">
+                <hr>
+                <button>Privacy Policy</button>
+                <button>Cookie Policy</button>
+                <p class="footer-ps">
+                    IIS VIOLA-MARCHESINI Via A. De Gasperi, 21 Rovigo - Centralino Tel. 0425/410699 Fax 0425/35277
+                    <br>Email: <a href="">rois012001@istruzione.it</a> Posta Elettronica Certificata <a href="">rois012001@pec.istruzione.it</a> 
+                    <br><a href="">Dichiarazione di accessibilità</a>
+                </p>
+            </div>
+        </div>
+    </body>   
+</html>

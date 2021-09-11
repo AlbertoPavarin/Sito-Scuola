@@ -1,0 +1,247 @@
+#page{
+    font: normal 12px/18px 'Lucida Grande', ' Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    background-color: #eee;
+}
+
+#header{
+    background: #3377BB url(https://www.iisviolamarchesini.edu.it/j2/templates/tk_gen_free_ii/images/gradient.png) repeat-x;
+    margin: 0;
+    height: 212px;
+    width: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    #header {
+      display: none;
+    }
+  }
+
+#date{
+    color: #fff;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#header-info{
+    text-align: center;
+    background: #fff;
+    max-width: 1100px;
+    margin: auto;
+    height: 212px;
+}
+
+#header-text{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#iis{
+    font-size: 20px;
+    color: #A0A0A0;
+    margin-top: 10px;
+}
+
+#viola{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.indirizzi{
+    font-size: 12px;
+    color: #A0A0A0;
+}
+
+#repimg{
+    float: left;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+#certiquality{
+    float: right;
+    margin-right: 25px;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+#certimg{
+    width: 100px;
+    height: 100px;
+}
+
+#menubar{
+    background: #3b496e;
+    width: 100%;
+    height: auto;
+}
+
+.selection{
+    text-align: center;
+    float: left;
+    color: #fff;
+    font-size: 10px;
+}
+
+.divsel:hover{
+    background: #3175ba url(https://www.iisviolamarchesini.edu.it/j2/templates/tk_gen_free_ii/images/menubargradient.png) repeat-x;
+    border-width: thin;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 5px;
+}
+
+#toolbar{
+    text-align: center;
+    padding: 5px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#searchForm{
+    width: 176px;
+    height: 34px;
+    border-radius: 5px;
+    border-color: #0000;
+    border-style: solid;
+    border-width: thin;
+}
+
+#bodypart{
+    text-align: center;
+    background: #ddd;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+#main{
+    text-align: center;
+    background: #fff;
+    max-width: 1100px;
+    margin: auto;
+    height: 100%; 
+}
+
+.boxes{
+    border-width:thin;
+    border-color: #ddd;
+    border-style: solid;
+    background-color: #eee;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-align:left;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    margin-bottom:35px;
+}
+
+.box-title{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #3377BB;
+    font-weight:200;
+}
+
+.box-links-p{
+    text-decoration: none;
+}
+
+.box-links{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.box-info-p{
+    margin-bottom: 0px;
+}
+
+.box-info{
+    margin-bottom: 12px;
+}
+
+.box-ddi{
+    padding-bottom: 15px;
+    margin-top: 20px;
+    color: #3377BB;
+}
+
+#home-text{
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.main-text{
+    color: #3377BB;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+}
+
+.sottotitoli{
+    color: #3377BB;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.main-ps{
+    text-align: left;
+    font-size: 12px;
+}
+
+.main-link{
+    text-align: left;
+    color: #3377BB;
+    font-size: 12px;
+    margin-top: 2px;
+    text-decoration: none;
+}
+
+.main-link:hover{
+    text-decoration: underline;
+}
+
+.main-li{
+    text-align: left;
+    display: list-item;
+}
+
+.main-img{
+    padding-bottom: 15px;
+}
+
+.boxes-img{
+    padding-top: 15px;
+    border-width:thin;
+    border-color: #ddd;
+    border-style: solid;
+    background-color: #eee;
+    border-radius: 4px;
+    margin-top: 15px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    margin-bottom:35px;
+    text-align: center;
+}
+
+#footer{
+    width: 100%;
+}
+
+button{
+    border-width: thin;
+    border-style: solid;
+    border-color: #000;
+    font-size: 15px;
+}
+
+.footer-ps{
+    font-size: 11px;
+    color: #A0A0A0;
+    margin-top: 20px;
+}
