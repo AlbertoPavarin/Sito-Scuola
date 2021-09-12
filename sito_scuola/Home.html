@@ -7,10 +7,10 @@
         <title>IIS Viola Marchesini Rovigo - Home</title>
     </head>
     <script>
-            let giorni = ['Lunedì', 'Martedì', 'Mercoledì', ' Giovedì', 'Venerdì', ' Sabato', ' Domenica'];
-            let mesi = ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno', 'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre']
+            let giorni = ['Domenica', 'Lunedì', 'Martedì', 'Mercoledì', ' Giovedì', 'Venerdì', ' Sabato'];
+            let mesi = ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno', 'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre'];
             const data = new Date();
-            const giorno = giorni[data.getDay() - 1];
+            let giorno = giorni[data.getDay()];
             let giornoN = data.getDate();
             if (giornoN < 10)
             {
