@@ -78,13 +78,6 @@
     height: auto;
 }
 
-.selection{
-    text-align: center;
-    float: left;
-    color: #fff;
-    font-size: 10px;
-}
-
 .divsel:hover{
     background: #3175ba url(https://www.iisviolamarchesini.edu.it/j2/templates/tk_gen_free_ii/images/menubargradient.png) repeat-x;
     border-width: thin;
@@ -101,7 +94,6 @@
 }
 
 #searchForm{
-    width: 176px;
     height: 34px;
     border-radius: 5px;
     border-color: #0000;
