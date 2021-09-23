@@ -78,6 +78,10 @@
     height: auto;
 }
 
+#navbarDropdown, #home{
+    color: #ddd;
+}
+
 .divsel:hover{
     background: #3175ba url(https://www.iisviolamarchesini.edu.it/j2/templates/tk_gen_free_ii/images/menubargradient.png) repeat-x;
     border-width: thin;
